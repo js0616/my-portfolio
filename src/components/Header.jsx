@@ -48,7 +48,7 @@ const Header = forwardRef((props, ref) => {
 
   const menu_show = () => {
     menuState ? setMenustate(false) : setMenustate(true)
-    console.log(menuState)
+    // console.log(menuState)
   }
   
   

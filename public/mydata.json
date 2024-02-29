@@ -58,7 +58,7 @@
                           ["수행 기간", "2023.10.10 ~ 2023.12.03"]            
                         ],
             "pd_btn_more" : ["eyes-on",8],
-            "pd_video_path ": "./img/eyes-on/video.mp4",
+            "pd_video_path": "./img/eyes-on/video.mp4",
             "pd_github" : "https://github.com/js0616/eyes_on"
 
         } 
@@ -78,7 +78,7 @@
                         ],
             "pd_btn_more" : ["my-portfolio",6],
             "pd_video_path" : "",
-            "pd_github": "github_url"
+            "pd_github": "https://github.com/js0616/my-portfolio"
 
         } 
 

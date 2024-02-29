@@ -9,13 +9,13 @@ const Project_modal = ({modal, video_url}) => {
     const [number, setNumber] = useState(0)
 
     const handleLeft = ()=> {
-        video_url.length == 0 
+        video_url.length === 0 
         ? number == 0 ? setNumber(modal[1]-1) : setNumber(number-1)
         : number == 0 ? setNumber(modal[1]) : setNumber(number-1)
     }
     const handleRight = () => {
-        video_url.length == 0 ?
-        number == modal[1]-1 ? setNumber(0) : setNumber(number+1)   
+        video_url.length === 0 
+        ? number == modal[1]-1 ? setNumber(0) : setNumber(number+1)   
         : number == modal[1] ? setNumber(0) : setNumber(number+1)   
     }
 
@@ -39,7 +39,7 @@ const Project_modal = ({modal, video_url}) => {
     <div className='project_modal'>
         <div className='modal_contain'>
             <button onClick={handleLeft} className='arrow'> <MdArrowBackIosNew  /> </button>
-            {video_url.length == 0 ? <img src={imgArray[number]} ></img> :            
+            {video_url.length === 0 ? <img src={imgArray[number]} ></img> :            
             number === 0 
             ?   <video controls={true} muted>
                     <source src={video_url} type="video/mp4" />
@@ -48,7 +48,7 @@ const Project_modal = ({modal, video_url}) => {
             
             <button onClick={handleRight} className='arrow'><MdArrowForwardIos /></button>
         </div>
-        {video_url.length == 0 ? <div className='modal_page_number'> {number+1} / {imgArray.length} </div> : <div className='modal_page_number'>  {number+1} / {imgArray.length} </div> }
+        {video_url.length === 0 ? <div className='modal_page_number'> {number+1} / {imgArray.length} </div> : <div className='modal_page_number'>  {number+1} / {imgArray.length} </div> }
 
     </div>
   )
