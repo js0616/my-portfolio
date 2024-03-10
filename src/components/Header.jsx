@@ -21,8 +21,8 @@ const Header = forwardRef((props, ref) => {
   },[scrollPosition])
 
   const headerStyle = {
-    backgroundColor: scrollPosition > 50 ? '#f9f9f9' : 'transparent',
-    color : scrollPosition> 50 ?'black':'white',
+    backgroundColor: menuState|| scrollPosition > 50 ? '#f9f9f9' : 'transparent',
+    color : menuState|| scrollPosition> 50 ?'black':'white',
     transition: 'background-color 0.5s ease',
   };
 
@@ -48,7 +48,6 @@ const Header = forwardRef((props, ref) => {
 
   const menu_show = () => {
     menuState ? setMenustate(false) : setMenustate(true)
-    // console.log(menuState)
   }
   
   
@@ -62,7 +61,7 @@ const Header = forwardRef((props, ref) => {
         
         {menuState ? 
 
-        <div className='accordion_btn' style={headerStyle}>
+        <div className='accordion_btn'>
           <div onClick={()=> nav_move(ref.aboutRef)}>About</div>
           <div onClick={()=> nav_move(ref.skillRef)}>Skill</div>
           <div onClick={()=> nav_move(ref.projectRef)}>Project</div>
