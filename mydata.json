@@ -55,9 +55,9 @@
                           ["그외 활용", "Tesseract OCR, SOLAPI, SketchUp, blender,"],    
 
                           ["개발 인원", "5명 (팀장)"],
-                          ["수행 기간", "2023.10.10 ~ 2023.12.03"]            
+                          ["수행 기간", "2023.10.26 ~ 2023.12.03"]            
                         ],
-            "pd_btn_more" : ["eyes-on",8],
+            "pd_btn_more" : ["eyes-on", 24],
             "pd_video_path": "./img/eyes-on/video.mp4",
             "pd_github" : "https://github.com/js0616/eyes_on"
 
